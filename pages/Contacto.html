@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@200;400;600&display=swap" rel="stylesheet">
+  <title>Documento Clase 2</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://kit.fontawesome.com/8bc7ce1f3f.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="body">
+  <div class="paginacontacto__container">
+    <!-- seccion de logo y menu navegable -->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo">
+          <a href="../index.html" class="header__logo"><img src="../Recursos/zampaPachalogo(2).jpeg" alt="Logo"></a>
+        </div>
+        <nav class="header__menu">
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="Historia.html">Historia</a></li>
+            <li><a href="Clases.html">Clases</a></li>
+            <li><a href="Galeria.html">Galeria</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="paginas__titulo">
+        <h1>Contacto</h1>
+      </section>
+      <!-- formulario de contacto a continuacion -->
+
+      <section class="contacto__container">
+        <article class="contacto__formulario">
+          <h2 class="contacto__subTitulo"> Escribinos</h2>
+          <form action="">
+            <ul>
+              <li>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="Nombre">
+              </li>
+              <li>
+                <label for="tel"> Telefono</label>
+                <input type="tel" id="tel" name="telefono">
+              </li>
+              <li>
+                <label for="mail">Correo electrónico:</label>
+                <input type="email" id="mail" name="mail">
+              </li>
+              <li>
+                Tipo Danza:
+                <select name="Danza" id="danza">
+                  <option value="Niños"> Niños</option>
+                  <option value="Malambo"> Malambo</option>
+                  <option value="Tango">Tango</option>
+                  <option value="Tradicional">Tradicional</option>
+                  <option value="Estilizado"> Estilizado</option>
+                </select>
+              </li>
+              <li>
+                <label for="msg" class="contacto__bloque">Mensaje:</label>
+                <textarea id="msg" name="Mensaje"></textarea>
+              </li>
+            </ul>
+            <div>
+              <button type="submit" class="contacto__bloque"> Enviar Mensaje</button>
+              <button type="reset" class="contacto__bloque">Borrar Mensaje</button>
+            </div>
+          </form>
+        </article>
+        <!-- Formas de Contacto con la academia -->
+        <article class="contacto__informacion">
+          <h2>Comunicate!</h2>
+          <ul>
+            <li>
+              <h5><span>Telefono:</span> (3582) 445609</h5>
+            </li>
+            <li>
+              <h5><span>Email:</span> Lorem, ipsum dolor.</h5>
+            </li>
+            <li>
+              <h5><span>Social:</span> <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              </i></a><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></h5>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <!-- cierre de formulario de contacto -->
+    <!-- inicio de footer -->
+    <footer class="footer">
+      <div class="footer__contacto">
+        <img src="../recursos/zampaPachalogo(2).jpeg" alt="logo">
+        <h4> Contactate con Nosotros!</h4>
+        <p><i class="fa-solid fa-square-phone"></i> Tel: 3582445609</p>
+        <p><i class="fa-solid fa-location-dot"></i>Colombia 658 Sampacho, Cordoba</p>
+      </div>
+      <div class="footer__redes">
+        <h3>SEGUINOS EN LAS REDES!</h3>
+        <ul>
+          <li> <a href="https://www.messenger.com" target="_blank"><i class="fa-brands fa-facebook-messenger"></i></li>
+          <li> <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+          <li> <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        <p> copyright</p>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>
