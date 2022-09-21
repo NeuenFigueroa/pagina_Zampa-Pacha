@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@200;400;600&display=swap" rel="stylesheet">
@@ -17,8 +20,37 @@
   <div class="paginaclases__container">
     <!-- seccion de logo y menu navegable -->
     <header class="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand header__logo" href="../index.html"><img src="../recursos/zampaPachalogo(2).jpeg"
+              alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Historia.html">Historia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Clases.html">Clases</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-      <div class="header__container">
+      <!-- <div class="header__container">
         <div class="header__logo">
           <a href="../index.html" class="header__logo"><img src="../recursos/zampaPachalogo(2).jpeg" alt="Logo"></a>
         </div>
@@ -31,46 +63,61 @@
             <li><a href="Contacto.html">Contacto</a></li>
           </ul>
         </nav>
-      </div>
+      </div> -->
     </header>
     <main>
       <section class="paginas__titulo">
         <h1>Clases y Actividades</h1>
       </section>
       <!-- seccion con distintas danzas -->
-      <section class="clases__container">
-        <div><img src="../recursos/clasesniños.jpg" alt="clases niños">
-          <h5>Clases Niños</h5>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Corrupti soluta repellendus voluptatibus qui rem deserunt nam, debitis cumque! Asperiores, saepe ipsum.
-            Obcaecati ad odit molestiae repudiandae, quas consequatur tempore a!</p>
+      <section class="container-fluid mt-4 mb-4">
+        <div class="row justify-content-evenly">
+          <div class="card" style="width: 20rem;">
+            <img src="../recursos/clasestango.jpg" class="card-img-top" alt="clasestango">
+            <div class="card-body text-center">
+              <h5 class="card-title">Clases de Tango</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="Contacto.html" class="btn btn-primary">Saber Mas!</a>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem;">
+            <img src="../recursos/clasemalambo.jpg" class="card-img-top" alt="clasemalambo">
+            <div class="card-body text-center">
+              <h5 class="card-title text-center">Clases de Malambo</h5>
+              <p class="card-text text-center">Lorem ipsum dolor sit amet.</p>
+              <a href="Contacto.html" class="btn btn-primary">Saber Mas!</a>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem;">
+            <img src="../recursos/clasesestilizado.png" class="card-img-top" alt="clasesestilizado">
+            <div class="card-body text-center">
+              <h5 class="card-title">Clases Estilizado</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="Contacto.html" class="btn btn-primary">Saber Mas!</a>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem;">
+            <img src="../recursos/clasestradicional.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title">Clases Tradicional</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="Contacto.html" class="btn btn-primary">Saber Mas!</a>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem;">
+            <img src="../recursos/clasesniños.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title">Clases Niños</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="Contacto.html" class="btn btn-primary">Saber mas!</a>
+            </div>
+          </div>
         </div>
-        <div><img src="../recursos/clasestradicional.jpg" alt="clases tradicional">
-          <h5>Clases Tradicional</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Soluta maiores molestiae, nihil ad sunt eaque, obcaecati suscipit incidunt odio ullam rerum fugiat sapiente
-            aspernatur non excepturi doloremque laborum quibusdam id?</p>
-        </div>
-        <div><img src="../recursos/clasemalambo.jpg" alt="clases malambo">
-          <h5> Clases Malambo</h5>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Fuga veritatis consequuntur nemo culpa neque quis molestiae dolores facilis minima sunt ea vero numquam,
-            possimus, praesentium quidem officiis itaque similique laudantium.</p>
-        </div>
-        <div><img src="../recursos/clasesestilizado.png" alt="clases estilizado">
-          <h5>Clases Estilizado</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Possimus, tempora eveniet? Officia porro iusto minima veniam officiis, non eveniet recusandae quo commodi
-            placeat quos saepe quod dignissimos facilis delectus voluptas!</p>
-        </div>
-        <div><img src="../recursos/clasestango.jpg" alt="clases tangos">
-          <h5>Clases Tango</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Expedita ipsum quia libero perspiciatis dolorem blanditiis quaerat suscipit, illo dolore facilis. Cupiditate
-            consectetur corporis cum illo voluptate recusandae distinctio modi at.</p>
-        </div>
-
-      </section>
+      </section>     
       <section class="galeria__invitacion">
         <h2>Que estas esperando Sumate!</h2>
         <h3> Clases para todos los niveles y edades!</h3>
@@ -98,6 +145,10 @@
       </div>
     </footer>
   </div>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
 
 </body>
 

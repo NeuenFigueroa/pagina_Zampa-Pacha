@@ -7,7 +7,7 @@
 
 .body {
     min-height: 100vh;
-    font-family: 'Noto Serif HK', serif;
+    font-family: 'Noto Serif HK', serif !important; 
     display: grid;
 
 }
@@ -50,32 +50,42 @@
     align-items: center;
     flex-wrap: wrap;
 }
-
-
+.navbar li{
+    color: aliceblue;
+}
+.nav-item a{
+    color: aliceblue;
+    transition: all 0.4s linear;
+    border-radius: 15px;
+    
+}
 .header__logo img {
     border-radius: 50%;
     width: 50px;
+    margin-left: 50px;
 
 
 }
 
-.header__menu a {
+/* .header__menu a {
     text-decoration: none;
     color: inherit;
     font-size: 14px;
 
-}
-
+} */
+/* 
 .header__menu li {
     display: inline-flex;
     padding: 0.4rem 1.5rem;
     text-align: center;
     color: rgb(209, 210, 218);
     transition: all 0.4s linear;
-    border-radius: 15px;
+    border-radius: 15px; 
 }
+    */
 
-.header__menu li:hover {
+
+.nav-item :hover {
     background-color: #04002b;
     color: rgb(255, 217, 0);
 }
@@ -89,7 +99,12 @@
     display: flex;
     flex-direction: column;
 }
-
+.carousel-caption p {
+    color: aliceblue;    
+}
+.carousel-item{
+    transition-duration: 0.6s
+}
 
 
 .principal__titulo h1 {
@@ -428,10 +443,7 @@
     padding: 5px;
     background-color: #7f816594;
 }
-.galeria__container :hover{
-    -webkit-transform:scale(1);transform:scale(0.9);
-    transition: all 2s;
-}
+
 
 .galeria__columnas {
     flex: 25%;
@@ -670,7 +682,7 @@ p {
         margin: 5px;
 
     }
-
+    
     /* mediaqueries pagina clases */
     .clases__container {
         flex-direction: column-reverse;
