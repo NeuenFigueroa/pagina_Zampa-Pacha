@@ -55,7 +55,7 @@
 }
 .nav-item a{
     color: aliceblue;
-    transition: all 0.4s linear;
+    transition: all 0.5s linear;
     border-radius: 15px;
     
 }
@@ -66,6 +66,11 @@
 
 
 }
+.nav-item{
+    padding: 0.1rem 0.3rem;    
+
+}
+
 
 /* .header__menu a {
     text-decoration: none;
@@ -479,7 +484,7 @@ h3 {
 /* comienzo css clases */
 .paginaclases__container {
     display: grid;
-    grid-template-rows: auto auto 2fr auto auto;
+    grid-template-rows: auto auto auto auto auto;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-template-areas: "header"
@@ -522,8 +527,8 @@ h3 {
 /* comienzo css historia */
 .paginaclases__container {
     display: grid;
-    grid-template-rows: auto auto 2fr auto auto;
-    grid-auto-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-auto-columns: 1fr;    
     gap: 0px 0px;
     grid-template-areas: "header"
         "titulo"
@@ -536,11 +541,12 @@ h3 {
     grid-area: historia;
     background-color: #7f816594;
     min-height: 300px;
+    
 
 }
 
 .historia__academia img {
-    float: right;
+    float: right;    
     max-height: 300px;
     padding: 1em;
     padding-bottom: 5em;
@@ -560,7 +566,7 @@ p {
 
 .historia__academia p {
     padding-top: 2em;
-    padding-left: 3em;
+    padding-left: 2em;
     font-size: 16px;
     text-align: justify;
 
