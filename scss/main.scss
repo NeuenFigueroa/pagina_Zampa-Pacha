@@ -1,0 +1,151 @@
+@import "variables";
+@import "index";
+@import "mediaqueries";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    min-height: 100vh;
+    font-family: 'Noto Serif HK', serif !important;
+    display: grid;
+
+}
+
+
+
+.header {
+    grid-area: header;
+    display: grid;
+    background: rgb(59, 81, 16);
+    background: linear-gradient(180deg, rgba(59, 81, 16, 1) 52%, rgba(4, 64, 9, 1) 100%);
+}
+
+.header__container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar li {
+    color: aliceblue;
+      
+}
+
+.nav-item {
+    padding: 0.1rem 0.3rem; 
+    a {
+        border-radius: 15px;
+        color: aliceblue;
+        transition: all 0.5s linear;        
+        &:hover {
+            background-color: #04002b;
+            color: rgb(255, 217, 0);
+            
+        }
+    }
+    
+}
+
+.header__logo img {
+    border-radius: 50%;
+    width: 50px;
+    margin-left: 100px;
+}
+
+/* fin de la seccion de header y nav */
+
+
+/* fin seccion nosotros y comienzo de la seccion footer */
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    background: rgb(87, 89, 83);
+    background: linear-gradient(0deg, rgba(87, 89, 83, 1) 0%, rgba(14, 15, 14, 1) 15%);
+
+    h3 {
+        color: $colorLetrasFooter;
+        font-size: 1.5em;
+        text-decoration: underline;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+}
+
+.footer__redes {
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        padding-top: 1em;
+        justify-content: left;
+    }
+
+    i {
+        color: #6B2B75;
+        font-size: 30px;
+    }
+}
+
+
+.footer__contacto {
+    align-items: center;
+    padding-top: 1.5em;
+    text-align: left;
+
+    img {
+        border-radius: 50%;
+    }
+
+    h4 {
+        color: $colorLetrasFooter;
+    }
+
+    p {
+        color: $colorLetrasFooter;
+        text-align: left;
+        padding: 0;
+
+    }
+
+    i {
+        color: #c276d1;
+        text-align: left;
+        font-size: 25px;
+        margin-top: 00.3em;
+    }
+
+}
+
+.footer__copyright {
+    width: 100%;
+    bottom: 0;
+    height: 30px;
+
+    p {
+        color: aliceblue;
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+/* fin footer */

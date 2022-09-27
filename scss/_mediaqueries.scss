@@ -1,0 +1,64 @@
+@media (max-width: 768px) {
+
+    /* media queries de header e index */
+    .header__container {
+        flex-direction: column;
+
+    }
+
+    .principal__titulo p {
+        display: none;
+    }
+
+
+
+    .nosotros__introduccion {
+        flex-direction: column-reverse;
+        text-align: center;
+
+        img {
+            width: 100px;
+        }
+    }
+
+
+
+    .nosotros__about {
+        flex-direction: column;
+        align-items: center;
+
+        div {
+            width: 60%;
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid black;
+        }
+    }
+
+    /* mediaqueries de footer */
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+
+    }
+
+    .footer__redes {
+        h3 {
+            font-size: 15px;
+        }
+
+        li {
+            display: inline-block;
+            width: 20%;
+
+        }
+
+        a {
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+}

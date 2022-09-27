@@ -1,0 +1,126 @@
+
+
+/* CSS grids del Index*/
+.container__index {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "header"
+        "principal"
+        "nosotros"
+        "footer";
+}
+
+/* incio de la seccion principal */
+
+
+.principal {
+    grid-area: principal;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-caption p {
+    color: aliceblue;
+}
+
+.carousel-item {
+    transition-duration: 0.6s
+}
+
+.principal__titulo {
+    h1 {
+        position: absolute;
+        color: colorTextoPrincipal;
+        font-size: 25px;
+        padding-left: 20px;
+    }
+
+    p {
+        position: absolute;
+        color: colorTextoPrincipal;
+        padding-top: 30px;
+        padding-left: 20px;
+    }
+}
+
+.principal {
+    ul {
+        list-style: none;
+    }
+
+    li {
+        img {
+            width: 100%;
+            max-height: 400px;
+
+        }
+    }
+}
+
+/* fin de la seccion principal y comienzo de la seccion sobre nosotros */
+
+.nosotros {
+    grid-area: nosotros;
+    display: flex;
+    flex-direction: column;
+    background-color: #d3d4c4da;
+    align-items: center;
+
+    p {
+        color: #04002b;
+        font-weight: bolder;
+        font-size: $textoParrafo;
+        
+    }
+
+    img {
+        border-radius: 50%;
+        width: 100px;
+    }
+
+}
+
+
+.nosotros__introduccion {
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    padding-bottom: 2em;
+
+    div {
+        padding: 2em;
+    }
+
+    h2 {
+        font-size: 30px;
+        font-weight: 800;
+        color: #04002b;
+        text-align: center;
+    }
+
+}
+
+.nosotros__about {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-top: 00.3em;
+    padding-bottom: 10em;
+
+    div {
+
+        width: 20%;
+        padding: 5px;
+        justify-items: center;
+    }
+
+    i {
+        text-align: center;
+        font-size: 30px;
+        color: #6B2B75;
+        margin-top: 0;
+    }
+}
