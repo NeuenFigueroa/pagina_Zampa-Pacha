@@ -1,3 +1,37 @@
 $colorTextoPrincipal:rgb(186, 196, 187);
 $colorLetrasFooter: rgb(180, 180, 180);
 $textoParrafo: 15px;
+
+
+
+/* map Get */
+$estilos:(
+    display: grid,
+    letra: 'Noto Serif HK',
+    colorfondo: #7f816594,
+    tamano: 100vh
+);
+.body{
+    font-family: map-get($estilos, letra);
+    display: map-get($estilos , display);
+    background-color: map-get($estilos, colorfondo );
+    min-height: map-get($estilos , tamano);
+}
+
+    
+/* extend */
+
+
+
+    button {
+        margin: 0.3em;
+        background: #76d176;
+        border: 0;
+        text-transform: uppercase;
+        padding: 1em;
+        @extend .contacto__formulario;
+    }
+
+    
+
+

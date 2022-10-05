@@ -1,3 +1,18 @@
+/* map Get */
+.body {
+  font-family: "Noto Serif HK";
+  display: grid;
+  background-color: #7f816594;
+  min-height: 100vh; }
+
+/* extend */
+button {
+  margin: 0.3em;
+  background: #76d176;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em; }
+
 /* CSS grids del Index*/
 .container__index {
   display: grid;
@@ -82,38 +97,193 @@
     color: #6B2B75;
     margin-top: 0; }
 
-@media (max-width: 768px) {
-  /* media queries de header e index */
-  .header__container {
-    flex-direction: column; }
-  .principal__titulo p {
-    display: none; }
-  .nosotros__introduccion {
-    flex-direction: column-reverse;
-    text-align: center; }
-    .nosotros__introduccion img {
-      width: 100px; }
-  .nosotros__about {
-    flex-direction: column;
-    align-items: center; }
-    .nosotros__about div {
-      width: 60%;
-      margin: 5px;
-      padding: 5px;
-      border: 1px solid black; }
-  /* mediaqueries de footer */
-  .footer {
-    flex-direction: column;
-    align-items: center;
-    padding: 15px; }
-  .footer__redes h3 {
-    font-size: 15px; }
-  .footer__redes li {
-    display: inline-block;
-    width: 20%; }
-  .footer__redes a {
-    align-items: center;
-    justify-content: center; } }
+/* comienzo css clases */
+.paginaclases__container {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "header" "titulo" "clases" "invitacion" "footer"; }
+
+.clases__container {
+  grid-area: clases;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #7f816594; }
+  .clases__container div {
+    flex: 15%;
+    padding: 25px;
+    border-left: 1px solid #39990c; }
+    .clases__container div h5 {
+      font-size: 18px;
+      text-align: center; }
+  .clases__container img {
+    width: 100%;
+    max-width: 500px;
+    max-height: 500px; }
+
+/* fin de css clases */
+.paginacontacto__container {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "header" "titulo" "formulario" "footer"; }
+
+.contacto__container {
+  grid-area: formulario;
+  height: 100%;
+  background-color: #7f816594;
+  color: #737373;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em; }
+  .contacto__container ul {
+    list-style: none;
+    padding: 1em; }
+  .contacto__container li {
+    padding: 0.2em; }
+
+.contacto__formulario, button {
+  margin: 0;
+  padding: 1em;
+  padding-top: 0; }
+  .contacto__formulario button, button button {
+    margin: 0.3em;
+    background: #76d176;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em; }
+  .contacto__formulario button, button button,
+  .contacto__formulario input,
+  button input,
+  .contacto__formulario textarea,
+  button textarea {
+    width: 90%;
+    padding: .7em;
+    border: none;
+    color: #1f1d1d;
+    border: 2px solid #39990c; }
+
+.contacto__informacion {
+  text-align: center; }
+  .contacto__informacion h2 {
+    font-size: 30px;
+    padding-top: 1em; }
+  .contacto__informacion li {
+    margin: 0.5em;
+    font-size: 20px;
+    text-decoration: none; }
+    .contacto__informacion li i {
+      display: inline-flex;
+      color: #6B2B75;
+      width: 8%;
+      font-size: 35px;
+      text-decoration: none;
+      padding: 10px; }
+  .contacto__informacion h5 span {
+    font-size: 20px;
+    font-weight: 900;
+    color: #000000;
+    text-decoration: underline; }
+  .contacto__informacion a {
+    text-decoration: none; }
+
+/* comienzo css galeria */
+.paginagaleria__container {
+  display: grid;
+  grid-template-rows: auto auto 2fr auto auto;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "header" "titulo" "galeria" "invitacion" "footer"; }
+
+.paginas__titulo {
+  grid-area: titulo;
+  width: 100%;
+  text-align: center;
+  background-image: url(../recursos/Escenario1.jpg);
+  background-position: center;
+  height: 5em;
+  filter: brightness(150%); }
+  .paginas__titulo h1 {
+    color: aliceblue;
+    padding-top: 1em;
+    font-size: 30px; }
+
+.galeria__container {
+  grid-area: galeria;
+  display: flex;
+  padding: 5px;
+  background-color: #7f816594; }
+
+.galeria__columnas {
+  flex: 25%;
+  padding: 5px;
+  overflow: hidden; }
+  .galeria__columnas img {
+    width: 100%;
+    margin-top: 5px;
+    overflow: hidden; }
+    .galeria__columnas img:hover {
+      transition: all 0.5s;
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3); }
+
+.galeria__invitacion {
+  grid-area: invitacion;
+  text-align: center;
+  width: 100%;
+  height: 7em;
+  background-image: url(../recursos/escenario3.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  filter: brightness(80%); }
+  .galeria__invitacion h2,
+  .galeria__invitacion h3 {
+    color: white;
+    font-size: 25px;
+    padding-top: 0.5em; }
+
+/* fin de css galeria */
+/* comienzo css historia */
+.paginaclases__container {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "header" "titulo" "historia" "invitacion" "footer"; }
+
+.historia__academia {
+  grid-area: historia;
+  background-color: #7f816594;
+  min-height: 300px; }
+  .historia__academia img {
+    float: right;
+    max-height: 300px;
+    padding: 1em;
+    padding-bottom: 5em; }
+  .historia__academia h2 {
+    font-size: 25px; }
+  .historia__academia p {
+    padding-top: 2em;
+    padding-left: 2em;
+    font-size: 16px;
+    text-align: justify; }
+  .historia__academia h2,
+  .historia__academia p {
+    color: #04002b;
+    text-align: center;
+    padding: 0.5em;
+    font-weight: bold; }
+
+.historia__academia .historia__profe {
+  min-height: 300px; }
 
 * {
   margin: 0;
@@ -219,3 +389,89 @@
     font-size: 12px; }
 
 /* fin footer */
+@media (max-width: 768px) {
+  /* media queries de header e index */
+  .header__container {
+    flex-direction: column; }
+  .principal__titulo p {
+    display: none; }
+  .nosotros__introduccion {
+    flex-direction: column-reverse;
+    text-align: center; }
+    .nosotros__introduccion img {
+      width: 100px; }
+  .nosotros__about {
+    flex-direction: column;
+    align-items: center; }
+    .nosotros__about div {
+      width: 60%;
+      margin: 5px;
+      padding: 5px;
+      border: 1px solid black; }
+  /* mediaqueries de footer */
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px; }
+  .footer__redes h3 {
+    font-size: 15px; }
+  .footer__redes li {
+    display: inline-block;
+    width: 20%; }
+  .footer__redes a {
+    align-items: center;
+    justify-content: center; }
+  /* media queries de pagina galeria */
+  .paginas__titulo h1 {
+    font-size: 20px;
+    padding: 0; }
+  .galeria__container {
+    flex-direction: column; }
+  .galeria__invitacion {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    min-height: auto; }
+    .galeria__invitacion h2 {
+      font-size: 20px;
+      word-wrap: break-word; }
+    .galeria__invitacion h3 {
+      display: none; }
+  /* mediaqueries de pagina contacto */
+  .contacto__container {
+    display: flex !important;
+    flex-direction: column; }
+  .contacto__informacion {
+    text-align: justify; }
+  .contacto__informacion li a {
+    margin: 5px; }
+  /* mediaqueries pagina clases */
+  .clases__container {
+    flex-direction: column-reverse;
+    align-items: center; }
+    .clases__container div {
+      border-left: none;
+      border-bottom: .5px solid gray;
+      width: 80%; }
+  /* mediaqueries pagina historia */
+  .historia__academia {
+    display: flex;
+    flex-direction: column;
+    padding: 0; }
+    .historia__academia section {
+      justify-content: center;
+      text-align: center; }
+    .historia__academia p {
+      text-align: center;
+      font-size: 13px;
+      border: 10px;
+      padding-top: 0;
+      padding: 0 2em; }
+  .historia__imagen {
+    float: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0; } }

@@ -1,0 +1,52 @@
+/* comienzo css historia */
+.paginaclases__container {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "header"
+        "titulo"
+        "historia"
+        "invitacion"
+        "footer";
+}
+
+.historia__academia {
+    grid-area: historia;
+    background-color: #7f816594;
+    min-height: 300px;
+
+    img {
+        float: right;
+        max-height: 300px;
+        padding: 1em;
+        padding-bottom: 5em;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    p {
+        padding-top: 2em;
+        padding-left: 2em;
+        font-size: 16px;
+        text-align: justify;
+
+    }
+
+    h2,
+    p {
+        color: #04002b;
+        text-align: center;
+        padding: 0.5em;
+        font-weight: bold;
+    }
+
+}
+
+
+
+.historia__academia .historia__profe {
+    min-height: 300px;
+}

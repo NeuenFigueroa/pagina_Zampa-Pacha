@@ -1,19 +1,19 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 
-.body {
+/* .body {
     min-height: 100vh;
     font-family: 'Noto Serif HK', serif !important; 
     display: grid;
 
-}
+} */
 
 /* CSS grids del Index*/
-.container__index {
+/* .container__index {
     display: grid;
     grid-template-rows: auto auto auto auto;
     grid-auto-columns: 1fr;
@@ -22,7 +22,7 @@
         "principal"
         "nosotros"
         "footer";
-}
+} */
 
 
 
@@ -32,7 +32,7 @@
 
 
 /* inico de la seccion de header y nav */
-.header {
+/* .header {
     grid-area: header;
     display: grid;
     background: rgb(59, 81, 16);
@@ -74,7 +74,7 @@
 .nav-item :hover {
     background-color: #04002b;
     color: rgb(255, 217, 0);
-}
+} */
 
 /* fin de la seccion de header y nav */
 /* incio de la seccion principal */
@@ -187,7 +187,7 @@
 
 /* fin seccion nosotros y comienzo de la seccion footer */
 
-.footer {
+/* .footer {
     grid-area: footer;
     display: flex;
     flex-direction: row;
@@ -259,8 +259,8 @@
     font-size: 25px;
     margin-top: 00.3em;
 }
-
-.footer__copyright {
+ */
+/* .footer__copyright {
     width: 100%;
 
     bottom: 0;
@@ -271,7 +271,7 @@
     color: aliceblue;
     text-align: center;
     font-size: 12px;
-}
+} */
 
 /* fin footer */
 
@@ -279,7 +279,7 @@
 /* class para contacto.html */
 /* grid-layout pagina contacto */
 
-.paginacontacto__container {
+/* .paginacontacto__container {
     display: grid;
     grid-template-rows: auto auto auto auto;
     grid-auto-columns: 1fr;
@@ -386,11 +386,11 @@
     text-decoration: none;
     padding: 10px;
 
-}
+} */
 
 /* fin de css contacto */
 /* comienzo css galeria */
-.paginagaleria__container {
+/* .paginagaleria__container {
     display: grid;
     grid-template-rows: auto auto 2fr auto auto;
     grid-auto-columns: 1fr;
@@ -467,13 +467,13 @@
 h3 {
     color: rgb(255, 255, 255);
     font-size: 25px;
-    padding-top: 0.5em;
+    padding-top: 0.5em;}
+ */
 
-}
 
 /* fin de css galeria */
 /* comienzo css clases */
-.paginaclases__container {
+/* .paginaclases__container {
     display: grid;
     grid-template-rows: auto auto auto auto auto;
     grid-auto-columns: 1fr;
@@ -512,11 +512,11 @@ h3 {
 .clases__container div h5 {
     font-size: 18px;
     text-align: center;
-}
+} */
 
 /* fin de css clases */
 /* comienzo css historia */
-.paginaclases__container {
+/* .paginaclases__container {
     display: grid;
     grid-template-rows: auto auto auto auto auto;
     grid-auto-columns: 1fr;    
@@ -565,14 +565,14 @@ p {
 
 .historia__profe {
     min-height: 300px;
-}
+} */
 
 
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) { */
 
     /* media queries de header e index */
-    .header__container {
+   /*  .header__container {
         flex-direction: column;
 
     }
@@ -604,11 +604,11 @@ p {
         padding: 5px;
         border: 1px solid black;
 
-    }
+    } */
 
     /* mediaqueries de footer */
 
-    .footer {
+    /* .footer {
         flex-direction: column;
         align-items: center;
         padding: 15px;
@@ -635,10 +635,10 @@ p {
         display: flex;
         justify-content: center;
 
-    }
+    } */
 
     /* media queries de pagina galeria */
-    .paginas__titulo h1 {
+/*     .paginas__titulo h1 {
         font-size: 20px;
         padding: 0;
     }
@@ -662,11 +662,11 @@ p {
 
     .galeria__invitacion h3 {
         display: none;
-    }
+    } */
 
     /* mediaqueries de pagina contacto */
 
-    .contacto__container {
+  /*   .contacto__container {
         display: flex;
         flex-direction: column;
     }
@@ -678,10 +678,10 @@ p {
     .contacto__informacion li a {
         margin: 5px;
 
-    }
+    } */
     
     /* mediaqueries pagina clases */
-    .clases__container {
+    /* .clases__container {
         flex-direction: column-reverse;
         align-items: center;
     }
@@ -690,12 +690,12 @@ p {
         border-left: none;
         border-bottom: .5px solid gray;
         width: 80%;
-    }
+    } */
 
 
 
     /* mediaqueries pagina historia */
-    .historia__academia {
+    /* .historia__academia {
         display: flex;
         flex-direction: column;
         padding: 0;
@@ -725,8 +725,8 @@ p {
         justify-content: center;
         padding: 0;
 
-    }
+    } */
 
 
 
-}
+/* } */

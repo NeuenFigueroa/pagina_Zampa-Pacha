@@ -61,4 +61,99 @@
         }
     }
 
+
+
+
+    /* media queries de pagina galeria */
+    .paginas__titulo h1 {
+        font-size: 20px;
+        padding: 0;
+    }
+
+    .galeria__container {
+        flex-direction: column;
+    }
+
+    .galeria__invitacion {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        min-height: auto;
+
+        h2 {
+            font-size: 20px;
+            word-wrap: break-word;
+
+        }
+
+        h3 {
+            display: none;
+        }
+    }
+
+
+    /* mediaqueries de pagina contacto */
+
+    .contacto__container {
+        display: flex !important;
+        flex-direction: column;
+       
+    }
+
+    .contacto__informacion {
+        text-align: justify;
+    }
+
+    .contacto__informacion li a {
+        margin: 5px;
+    }
+
+    /* mediaqueries pagina clases */
+    .clases__container {
+        flex-direction: column-reverse;
+        align-items: center;
+
+        div {
+            border-left: none;
+            border-bottom: .5px solid gray;
+            width: 80%;
+        }
+    }
+
+
+
+
+
+    /* mediaqueries pagina historia */
+    .historia__academia {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+
+        section {
+            justify-content: center;
+            text-align: center;
+
+        }
+
+        p {
+            text-align: center;
+            font-size: 13px;
+            border: 10px;
+            padding-top: 0;
+            padding: 0 2em
+        }
+    }
+
+    .historia__imagen {
+        float: none;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+
+    }
+
 }

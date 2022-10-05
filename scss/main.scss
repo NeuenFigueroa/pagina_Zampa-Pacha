@@ -1,7 +1,9 @@
 @import "variables";
 @import "index";
-@import "mediaqueries";
-
+@import "clases";
+@import "contacto";
+@import "galeria";
+@import "historia";
 
 * {
     margin: 0;
@@ -149,3 +151,5 @@
 }
 
 /* fin footer */
+
+@import "mediaqueries";

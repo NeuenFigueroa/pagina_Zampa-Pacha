@@ -1,0 +1,37 @@
+/* comienzo css clases */
+.paginaclases__container {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "header"
+        "titulo"
+        "clases"
+        "invitacion"
+        "footer";
+}
+
+.clases__container {
+    grid-area: clases;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #7f816594;
+    div {
+        flex: 15%;
+        padding: 25px;
+        border-left: 1px solid #39990c;
+        h5 {
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+    img {
+        width: 100%;
+        max-width: 500px;
+        max-height: 500px;
+    }
+
+}
+/* fin de css clases */
