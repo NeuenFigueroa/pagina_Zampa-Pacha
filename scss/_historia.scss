@@ -14,7 +14,13 @@
 .historia__academia {
     grid-area: historia;
     background-color: #7f816594;
-    min-height: 300px;
+    min-height: 450px;
+    margin: 0;
+    padding: 0;
+
+    span{        
+        font-size: 17px;
+    }
 
     img {
         float: right;
@@ -24,12 +30,12 @@
     }
 
     h2 {
-        font-size: 25px;
+        font-size: 35px;
     }
 
     p {
-        padding-top: 2em;
-        padding-left: 2em;
+        padding-top: 3em;
+        padding-left:3em;
         font-size: 16px;
         text-align: justify;
 
@@ -42,11 +48,8 @@
         padding: 0.5em;
         font-weight: bold;
     }
+    
 
 }
 
 
-
-.historia__academia .historia__profe {
-    min-height: 300px;
-}

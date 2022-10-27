@@ -13,7 +13,7 @@
     grid-area: formulario;
     height: 100%;
     background-color: #7f816594;
-    color: #737373;
+    color: #303030;
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 100%;
@@ -59,9 +59,13 @@
 
 
 }
-.contacto__informacion {
-    text-align: center;
+.contacto__informacion {    
+        text-align: left;
+        margin-left: 100px;
 
+        
+    
+    
     h2 {
         font-size: 30px;
         padding-top: 1em
@@ -84,7 +88,9 @@
     }
 
     h5 span {
+        
         font-size: 20px;
+        padding: 5px;
         font-weight: 900;
         color: #000000;
         text-decoration: underline;

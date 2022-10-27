@@ -97,16 +97,24 @@
     .contacto__container {
         display: flex !important;
         flex-direction: column;
-       
+
     }
 
     .contacto__informacion {
         text-align: justify;
+        margin-left: 0;
+
+        li a {
+            padding: 10px;
+        }
+
+        span {
+            padding: 5px;
+        }
+
     }
 
-    .contacto__informacion li a {
-        margin: 5px;
-    }
+
 
     /* mediaqueries pagina clases */
     .clases__container {
@@ -155,5 +163,38 @@
         padding: 0;
 
     }
+
+}
+
+@media (max-width: 300px) {
+
+    /* mobile pagina historia */
+    .historia__academia {
+        display: flex;
+        img {
+            float: none;
+            display: flex;
+            width: 250px;
+            padding: 0em;
+            padding-bottom: 3em;
+        }
+        p {
+            font-size: 12px;
+            text-align: none;
+        }
+
+
+
+
+    }
+
+    /* mobile para pagina clases */
+
+    .card{
+        width: 80% !important;
+        margin-bottom: 5px;
+    }
+ 
+   
 
 }

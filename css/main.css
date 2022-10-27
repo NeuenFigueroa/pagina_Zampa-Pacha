@@ -33,17 +33,16 @@ button {
 .carousel-item {
   transition-duration: 0.6s; }
 
-.principal__titulo h1 {
-  position: absolute;
-  color: colorTextoPrincipal;
-  font-size: 25px;
-  padding-left: 20px; }
+.principal h1 {
+  position: relative;
+  color: #c7c5c7;
+  font-size: 50px; }
 
-.principal__titulo p {
-  position: absolute;
-  color: colorTextoPrincipal;
-  padding-top: 30px;
-  padding-left: 20px; }
+.principal p {
+  position: relative;
+  color: #c7c5c7;
+  padding-bottom: 50px;
+  font-size: 20px; }
 
 .principal ul {
   list-style: none; }
@@ -105,25 +104,6 @@ button {
   gap: 0px 0px;
   grid-template-areas: "header" "titulo" "clases" "invitacion" "footer"; }
 
-.clases__container {
-  grid-area: clases;
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: #7f816594; }
-  .clases__container div {
-    flex: 15%;
-    padding: 25px;
-    border-left: 1px solid #39990c; }
-    .clases__container div h5 {
-      font-size: 18px;
-      text-align: center; }
-  .clases__container img {
-    width: 100%;
-    max-width: 500px;
-    max-height: 500px; }
-
 /* fin de css clases */
 .paginacontacto__container {
   display: grid;
@@ -136,7 +116,7 @@ button {
   grid-area: formulario;
   height: 100%;
   background-color: #7f816594;
-  color: #737373;
+  color: #303030;
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 100%;
@@ -171,7 +151,8 @@ button {
     border: 2px solid #39990c; }
 
 .contacto__informacion {
-  text-align: center; }
+  text-align: left;
+  margin-left: 100px; }
   .contacto__informacion h2 {
     font-size: 30px;
     padding-top: 1em; }
@@ -188,6 +169,7 @@ button {
       padding: 10px; }
   .contacto__informacion h5 span {
     font-size: 20px;
+    padding: 5px;
     font-weight: 900;
     color: #000000;
     text-decoration: underline; }
@@ -262,17 +244,21 @@ button {
 .historia__academia {
   grid-area: historia;
   background-color: #7f816594;
-  min-height: 300px; }
+  min-height: 450px;
+  margin: 0;
+  padding: 0; }
+  .historia__academia span {
+    font-size: 17px; }
   .historia__academia img {
     float: right;
     max-height: 300px;
     padding: 1em;
     padding-bottom: 5em; }
   .historia__academia h2 {
-    font-size: 25px; }
+    font-size: 35px; }
   .historia__academia p {
-    padding-top: 2em;
-    padding-left: 2em;
+    padding-top: 3em;
+    padding-left: 3em;
     font-size: 16px;
     text-align: justify; }
   .historia__academia h2,
@@ -282,8 +268,113 @@ button {
     padding: 0.5em;
     font-weight: bold; }
 
-.historia__academia .historia__profe {
-  min-height: 300px; }
+@media (max-width: 768px) {
+  /* media queries de header e index */
+  .header__container {
+    flex-direction: column; }
+  .principal__titulo p {
+    display: none; }
+  .nosotros__introduccion {
+    flex-direction: column-reverse;
+    text-align: center; }
+    .nosotros__introduccion img {
+      width: 100px; }
+  .nosotros__about {
+    flex-direction: column;
+    align-items: center; }
+    .nosotros__about div {
+      width: 60%;
+      margin: 5px;
+      padding: 5px;
+      border: 1px solid black; }
+  /* mediaqueries de footer */
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px; }
+  .footer__redes h3 {
+    font-size: 15px; }
+  .footer__redes li {
+    display: inline-block;
+    width: 20%; }
+  .footer__redes a {
+    align-items: center;
+    justify-content: center; }
+  /* media queries de pagina galeria */
+  .paginas__titulo h1 {
+    font-size: 20px;
+    padding: 0; }
+  .galeria__container {
+    flex-direction: column; }
+  .galeria__invitacion {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    min-height: auto; }
+    .galeria__invitacion h2 {
+      font-size: 20px;
+      word-wrap: break-word; }
+    .galeria__invitacion h3 {
+      display: none; }
+  /* mediaqueries de pagina contacto */
+  .contacto__container {
+    display: flex !important;
+    flex-direction: column; }
+  .contacto__informacion {
+    text-align: justify;
+    margin-left: 0; }
+    .contacto__informacion li a {
+      padding: 10px; }
+    .contacto__informacion span {
+      padding: 5px; }
+  /* mediaqueries pagina clases */
+  .clases__container {
+    flex-direction: column-reverse;
+    align-items: center; }
+    .clases__container div {
+      border-left: none;
+      border-bottom: .5px solid gray;
+      width: 80%; }
+  /* mediaqueries pagina historia */
+  .historia__academia {
+    display: flex;
+    flex-direction: column;
+    padding: 0; }
+    .historia__academia section {
+      justify-content: center;
+      text-align: center; }
+    .historia__academia p {
+      text-align: center;
+      font-size: 13px;
+      border: 10px;
+      padding-top: 0;
+      padding: 0 2em; }
+  .historia__imagen {
+    float: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0; } }
+
+@media (max-width: 300px) {
+  /* mobile pagina historia */
+  .historia__academia {
+    display: flex; }
+    .historia__academia img {
+      float: none;
+      display: flex;
+      width: 250px;
+      padding: 0em;
+      padding-bottom: 3em; }
+    .historia__academia p {
+      font-size: 12px;
+      text-align: none; }
+  /* mobile para pagina clases */
+  .card {
+    width: 80% !important;
+    margin-bottom: 5px; } }
 
 * {
   margin: 0;
@@ -292,8 +383,9 @@ button {
 
 .body {
   min-height: 100vh;
-  font-family: 'Noto Serif HK', serif !important;
-  display: grid; }
+  font-family: 'Noto Serif HK', serif;
+  display: grid;
+  background-color: #7f816594; }
 
 .header {
   grid-area: header;
@@ -389,89 +481,3 @@ button {
     font-size: 12px; }
 
 /* fin footer */
-@media (max-width: 768px) {
-  /* media queries de header e index */
-  .header__container {
-    flex-direction: column; }
-  .principal__titulo p {
-    display: none; }
-  .nosotros__introduccion {
-    flex-direction: column-reverse;
-    text-align: center; }
-    .nosotros__introduccion img {
-      width: 100px; }
-  .nosotros__about {
-    flex-direction: column;
-    align-items: center; }
-    .nosotros__about div {
-      width: 60%;
-      margin: 5px;
-      padding: 5px;
-      border: 1px solid black; }
-  /* mediaqueries de footer */
-  .footer {
-    flex-direction: column;
-    align-items: center;
-    padding: 15px; }
-  .footer__redes h3 {
-    font-size: 15px; }
-  .footer__redes li {
-    display: inline-block;
-    width: 20%; }
-  .footer__redes a {
-    align-items: center;
-    justify-content: center; }
-  /* media queries de pagina galeria */
-  .paginas__titulo h1 {
-    font-size: 20px;
-    padding: 0; }
-  .galeria__container {
-    flex-direction: column; }
-  .galeria__invitacion {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    min-height: auto; }
-    .galeria__invitacion h2 {
-      font-size: 20px;
-      word-wrap: break-word; }
-    .galeria__invitacion h3 {
-      display: none; }
-  /* mediaqueries de pagina contacto */
-  .contacto__container {
-    display: flex !important;
-    flex-direction: column; }
-  .contacto__informacion {
-    text-align: justify; }
-  .contacto__informacion li a {
-    margin: 5px; }
-  /* mediaqueries pagina clases */
-  .clases__container {
-    flex-direction: column-reverse;
-    align-items: center; }
-    .clases__container div {
-      border-left: none;
-      border-bottom: .5px solid gray;
-      width: 80%; }
-  /* mediaqueries pagina historia */
-  .historia__academia {
-    display: flex;
-    flex-direction: column;
-    padding: 0; }
-    .historia__academia section {
-      justify-content: center;
-      text-align: center; }
-    .historia__academia p {
-      text-align: center;
-      font-size: 13px;
-      border: 10px;
-      padding-top: 0;
-      padding: 0 2em; }
-  .historia__imagen {
-    float: none;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    padding: 0; } }
